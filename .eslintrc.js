@@ -12,7 +12,7 @@ module.exports = {
       {
         tabWidth: 2,
         singleQuote: true,
-        semi: false,
+        semi: true,
         trailingComma: 'all',
       },
     ],
@@ -20,4 +20,4 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
   },
-}
+};
