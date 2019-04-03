@@ -13,7 +13,11 @@ interface IStorageDatabase {
 
 interface IStorage {}
 
-export class Storage implements IStorage {}
+export class Storage implements IStorage {
+  constructor() {
+    console.info("Database connection established.");
+  }
+}
 
 export class SQLiteStorageDatabase implements IStorageDatabase {
   static IN_MEMORY_PATH = ':memory:';
