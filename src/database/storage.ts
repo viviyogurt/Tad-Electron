@@ -4,6 +4,7 @@ interface IUpdateRequest {
   insert?: Map<string, string>;
   delete?: Set<string>;
 }
+
 interface IStorageDatabase {
   getItems(): Promise<Map<string, string>>;
   updateItems(request: IUpdateRequest): Promise<void>;
@@ -15,7 +16,7 @@ interface IStorage {}
 
 export class Storage implements IStorage {
   constructor() {
-    console.info("Database connection established.");
+    console.info('Database connection established.');
   }
 }
 
