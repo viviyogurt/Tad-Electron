@@ -1,3 +1,3 @@
-import { Exception } from './exception';
+import { Exception, Exceptions } from './exception';
 
-export { Exception };
+export { Exception, Exceptions };

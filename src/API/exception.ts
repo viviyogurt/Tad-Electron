@@ -1,3 +1,10 @@
+export enum Exceptions {
+  ConnectionError,
+  TypeCheckError,
+  DuplicatesError,
+  IllegalCharacterError,
+}
+
 export class Exception extends Error {
   constructor(readonly code: string) {
     super(
